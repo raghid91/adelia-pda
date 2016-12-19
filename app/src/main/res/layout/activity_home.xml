@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- Greeting Text -->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/rowDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/displayText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/display"
+            android:textColor="@color/displayText"
+            android:textSize="50sp"
+            android:gravity="top|start"
+            android:typeface="sans" />
+    </LinearLayout>
+
+    <!-- Date -->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/rowDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-5dp"
+        android:layout_below="@id/rowDisplay">
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="15dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="5dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/date"
+            android:textColor="@color/displayText"
+            android:textSize="20sp"
+            android:gravity="top|start"/>
+    </LinearLayout>
+
+    <!-- EXPENSES and EXERCISES Buttons -->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/row2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:id="@+id/expenses"
+            android:layout_width="wrap_content"
+            android:layout_height="180dp"
+            android:layout_weight="0.5"
+            android:layout_gravity="top"
+            android:background="@drawable/home_expenses"
+            android:contentDescription="@string/btn_expenses"
+            style="?android:attr/borderlessButtonStyle"/>
+        <Button
+            android:id="@+id/exercise"
+            android:layout_width="wrap_content"
+            android:layout_height="180dp"
+            android:layout_weight="0.5"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:background="@drawable/home_exercise"
+            android:contentDescription="@string/btn_exercise"
+            style="?android:attr/borderlessButtonStyle"/>
+    </LinearLayout>
+
+    <!-- TODOLIST and TIME LOG Buttons -->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/row1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/row2">
+        <Button
+            android:id="@+id/todo"
+            android:layout_width="wrap_content"
+            android:layout_height="180dp"
+            android:layout_weight="0.5"
+            android:layout_gravity="top"
+            android:background="@drawable/home_todo"
+            android:contentDescription="@string/btn_todo"
+            style="?android:attr/borderlessButtonStyle"/>
+        <Button
+            android:id="@+id/timelog"
+            android:layout_width="wrap_content"
+            android:layout_height="180dp"
+            android:layout_weight="0.5"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:background="@drawable/home_timelog"
+            android:contentDescription="@string/btn_timelog"
+            style="?android:attr/borderlessButtonStyle"/>
+    </LinearLayout>
+</RelativeLayout>

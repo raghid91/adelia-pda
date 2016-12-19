@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/header"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+        <!-- Title -->
+        <TextView
+            android:id="@+id/bargraph_Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/bargraph_Title"
+            android:textColor="@color/colorPrimary"
+            android:textSize="30sp"
+            android:gravity="top|start"
+            android:typeface="sans" />
+        <!-- Horizontal divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorPrimary"/>
+    </LinearLayout>
+    <!-- Layout to receive Bar Graph -->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/bargraphView"
+        android:orientation="vertical"
+        android:layout_below="@id/header"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:padding="10dp">
+
+    </LinearLayout>
+    <!-- Buttons fragment -->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/footer"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <fragment
+            android:name="com.example.yannick.adelia_pda.barFragment"
+            android:id="@+id/barFragment"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            tools:layout="@layout/fragment_bargraph_button">
+        </fragment>
+    </LinearLayout>
+</RelativeLayout>

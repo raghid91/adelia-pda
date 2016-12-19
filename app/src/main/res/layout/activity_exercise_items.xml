@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/timelog_list_item"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15dp">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/exerciseItem">
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layoutAnimation="@anim/list_animation">
+            <!-- Task Name -->
+            <TextView
+                android:id="@+id/exercise_list_name"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="@string/exercise_list_name"
+                android:textColor="@color/colorText"
+                android:textSize="17sp"
+                android:gravity="top|start"
+                android:typeface="sans" />
+            <TextView
+                android:id="@+id/exercise_list_statistic"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold"
+                android:text="@string/exercise_list_statistic"
+                android:textColor="@color/colorText"
+                android:textSize="14sp"
+                android:gravity="top|start"
+                android:typeface="sans" />
+            <TextView
+                android:id="@+id/exercise_list_latitude"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="@string/exercise_list_latitude"
+                android:textColor="@color/colorText"
+                android:textSize="12sp"
+                android:gravity="top|start"
+                android:typeface="sans" />
+            <TextView
+                android:id="@+id/exercise_list_longitude"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="@string/exercise_list_longitude"
+                android:textColor="@color/colorText"
+                android:textSize="12sp"
+                android:gravity="top|start"
+                android:typeface="sans" />
+            <!-- Date of created record -->
+            <TextView
+                android:id="@+id/exercise_list_recordDate"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="@string/todo_itemDate"
+                android:textColor="@color/colorText"
+                android:textSize="12sp"
+                android:gravity="top|start"
+                android:typeface="sans" />
+            <!-- Button to view map -->
+            <Button
+                android:id="@+id/exercise_list_viewMap"
+                android:layout_width="130dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"
+                android:textColor="@color/white"
+                android:contentDescription="@string/exercise_viewMap"
+                android:background="@drawable/view_map" />
+        </LinearLayout>
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layoutAnimation="@anim/list_animation">
+            <!-- Checkbox for deletion -->
+            <CheckBox
+                android:id="@+id/exercise_list_recordChk"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:button="@drawable/custom_checkbox"
+                android:checked="false" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

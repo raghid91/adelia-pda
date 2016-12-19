@@ -1,0 +1,192 @@
+<resources>
+    <!-- Application Name -->
+    <string name="app_name">Adelia</string>
+
+    <!-- Splash Screen -->
+    <string name="splash_screen">Splash Screen</string>
+
+    <!-- Menu items -->
+    <string name="menu_help">Help</string>
+    <string name="menu_exit">Exit</string>
+    <string name="menu_exit_confirm">Do you really want to exit app?</string>
+    <string name="menu_settings">Settings</string>
+
+    <!-- Home items -->
+    <string name="display">Hi Yannick!</string>
+    <string name="date">Wed, Nov 6</string>
+    <string name="btn_todo">todo</string>
+    <string name="btn_timelog">timelog</string>
+    <string name="btn_expenses">expenses</string>
+    <string name="btn_exercise">exercise</string>
+
+    <!-- Buttons fragment -->
+    <string name="add_btn">add</string>
+    <string name="delete_btn">delete</string>
+    <string name="report_btn">report</string>
+
+    <!-- To Do List -->
+    <string name="todo_title">To Do List</string>
+    <string name="todo_addtitle">Add To Do List</string>
+    <string name="todo_itemName">Item Name</string>
+    <string name="todo_itemDate">Date</string>
+    <string name="todo_itemBtn">DONE</string>
+    <string name="todo_addTitle">Title of item</string>
+    <string name="todo_deleteTitle">Do you want to delete all checked item(s)?</string>
+    <string name="todo_addList">Add List</string>
+    <string name="todo_Cancel">Cancel</string>
+    <string name="todo_takePhoto">Take Photo</string>
+    <string name="todo_viewPhoto">View Photo</string>
+
+    <!-- Time Log List -->
+    <string name="timelog_title">Time Log</string>
+    <string name="timelog_addtitle">Add Time Log</string>
+    <string name="timelog_list_taskName">Task Name</string>
+    <string name="timelog_list_taskDescription">Description</string>
+    <string name="timelog_list_Time">From/To</string>
+    <string name="timelog_list_latitude">Latitude</string>
+    <string name="timelog_list_longitude">Longitude</string>
+    <string name="timelog_taskName">Task Name</string>
+    <string name="timelog_taskDescription">Task Description</string>
+    <string name="timelog_fromTime">From time (in format 13:30)</string>
+    <string name="timelog_toTime">To time (in format 13:30)</string>
+    <string name="timelog_deleteTitle">Do you want to delete all checked log(s)?</string>
+    <string name="timelog_reporttitle">Report for Time Log</string>
+    <string name="timelog_reporttext">Task Name to report</string>
+    <string name="timelog_enableGps">This activity needs GPS Location. Would you like to enable GPS?</string>
+    <string name="timelog_viewMap">View Map</string>
+
+    <!-- Expenses Record -->
+    <string name="expense_title">Expenses Record</string>
+    <string name="expense_reporttitle">Report for Expense record</string>
+    <string name="expense_reporttext">Category Name</string>
+    <string name="expense_addtitle">Add Expense Record</string>
+    <string name="expense_reference">Reference</string>
+    <string name="expense_description">Description</string>
+    <string name="expense_category">Category</string>
+    <string name="expense_amount">Amount</string>
+    <string name="expense_list_reference">Reference</string>
+    <string name="expense_list_Description">Description</string>
+    <string name="expense_list_category">Category</string>
+    <string name="expense_list_amount">Amount</string>
+    <string name="expense_deleteTitle">Do you want to delete all checked expense(s)?</string>
+
+    <!-- Exercise log -->
+    <string name="exercise_title">Exercise Log</string>
+    <string name="exercise_reporttitle">Report for Exercise Log</string>
+    <string name="exercise_reporttext">Exercise Name</string>
+    <string name="exercise_addtitle">Add Exercise Log</string>
+    <string name="exercise_name">Exercise Name</string>
+    <string name="exercise_date">Date in format DD/MM/YY</string>
+    <string name="exercise_statistic">Statistic</string>
+    <string name="exercise_list_name">Exercise Name</string>
+    <string name="exercise_list_date">Exercise Date</string>
+    <string name="exercise_list_statistic">Stat</string>
+    <string name="exercise_list_latitude">Latitude</string>
+    <string name="exercise_list_longitude">Longitude</string>
+    <string name="exercise_deleteTitle">Do you want to delete all checked exercise(s)?</string>
+    <string name="exercise_enableGps">This activity needs GPS Location. Would you like to enable GPS?</string>
+    <string name="exercise_viewMap">View Map</string>
+
+    <!-- Report -->
+    <string name="report_Title">Report</string>
+    <string name="report_text">Display report text</string>
+
+    <!-- Bar Graph -->
+    <string name="bargraph_Title">Title</string>
+    <string name="previous_btn">PREVIOUS</string>
+    <string name="next_btn">NEXT</string>
+
+    <!-- Settings -->
+    <string name="settings_Title">Settings</string>
+    <string name="settings_clearDb">Clear all tables in Database</string>
+    <string name="settings_choose">Or choose a table to clear from list below:</string>
+    <string name="settings_clearAll">ClearAll</string>
+    <string name="settings_clearDatabase">Click the button below to delete all records in database.</string>
+    <string name="settings_clearTable">Clear a table</string>
+    <string name="settings_clearThisTable">Clear this table</string>
+    <string name="settings_databaseConfirm">Do you really want to clear database?</string>
+    <string name="settings_tableConfirm">Do you really want to clear this table in the database?</string>
+    <string-array name="table_list">
+        <item>1. To Do List</item>
+        <item>2. Time Log</item>
+        <item>3. Expenses List</item>
+        <item>4. Exercise Log</item>
+    </string-array>
+
+    <!-- Help Activity -->
+    <string name="help_title">Help Screen</string>
+    <string name="help_intro">\nThis section will help you understand the function of this application and its different component.\n\nPlease go to each section to view the individual help guidelines.</string>
+    <string name="back_btn">Back to previous screen</string>
+    <string name="help_todo">TODO LIST HELP\n\n
+        A minimalist, keyboard-driven Windows GUI for your todo.txt file, by Ben Hughes.\n\n
+        Todo.txt Chrome App\n
+        Standalone, offline-ready Chrome app for your todo.txt file - works across Windows, Mac, Linux and Chrome OS.\n\n
+        TodoTxtMac\n
+        TodoTxtMac is a minimalist, keyboard-driven to-do manager for Mac OS X (10.8 Mountain Lion and higher).\n\n
+        Todour\n
+        Todour is an application for handling todo.txt files on the Mac and Windows.\n\n
+        DoStuff\n
+        "A todo.txt client for humans" on Ubuntu (screenshots and video clip).\n\n
+        DayTasks\n
+        A fast, simple, and efficient todo.txt-compatible task list for Ubuntu.\n\n
+        QTodoTxt\n
+        A fast, cross-platform todo.txt GUI written in Python.\n\n
+        jdotxt\n
+        An open-source, Java-based client for Windows, Mac OS X and Linux.\n\n
+        otodo\n
+        Simple but powerful TUI for todo.txt by Ondrej Novy.</string>
+    <string name="help_timelog">TIME LOG HELP \n\n
+        A minimalist, keyboard-driven Windows GUI for your TimeLog.txt file.\n\n
+        TimeLog.txt Chrome App\n
+        Standalone, offline-ready Chrome app for your TimeLog.txt file - works across Windows, Mac, Linux and Chrome OS.\n\n
+        TimeLogTxtMac\n
+        TodoTxtMac is a minimalist, keyboard-driven TimeLog manager for Mac OS X (10.8 Mountain Lion and higher).\n\n
+        TimeLog\n
+        TimeLog is an application for handling TimeLog.txt files on the Mac and Windows.\n\n
+        DoStuff\n
+        "A TimeLog.txt client for humans" on Ubuntu (screenshots and video clip).\n\n
+        DayTasks\n
+        A fast, simple, and efficient todo.txt-compatible task list for Ubuntu.\n\n
+        QTodoTxt\n
+        A fast, cross-platform todo.txt GUI written in Python.\n\n
+        jTimeLogtxt\n
+        An open-source, Java-based client for Windows, Mac OS X and Linux.\n\n
+        oTimeLog\n
+        Simple but powerful TUI for TimeLog.txt.</string>
+    <string name="help_expense">EXPENSES HELP\n\n
+        A minimalist, keyboard-driven Windows GUI for your Expense.txt file.\n\n
+        Expense.txt Chrome App\n
+        Standalone, offline-ready Chrome app for your Expense.txt file - works across Windows, Mac, Linux and Chrome OS.\n\n
+        ExpenseTxtMac\n
+        ExpenseTxtMac is a minimalist, keyboard-driven Expense manager for Mac OS X (10.8 Mountain Lion and higher).\n\n
+        Expense\n
+        Expense is an application for handling Expense.txt files on the Mac and Windows.\n\n
+        DoStuff\n
+        "A Expense.txt client for humans" on Ubuntu (screenshots and video clip).\n\n
+        DayTasks\n
+        A fast, simple, and efficient todo.txt-compatible task list for Ubuntu.\n\n
+        QExpenseTxt\n
+        A fast, cross-platform todo.txt GUI written in Python.\n\n
+        jExpensetxt\n
+        An open-source, Java-based client for Windows, Mac OS X and Linux.\n\n
+        oExpense\n
+        Simple but powerful TUI for Expense.txt.</string>
+    <string name="help_exercise">EXERCISE LOG HELP\n\n
+        A minimalist, keyboard-driven Windows GUI for your Exercise.txt file.\n\n
+        Exercise.txt Chrome App\n
+        Standalone, offline-ready Chrome app for your Exercise.txt file - works across Windows, Mac, Linux and Chrome OS.\n\n
+        ExerciseTxtMac\n
+        TodoTxtMac is a minimalist, keyboard-driven Exercise manager for Mac OS X (10.8 Mountain Lion and higher).\n\n
+        Exercise\n
+        Exercise is an application for handling todo.txt files on the Mac and Windows.\n\n
+        DoStuff\n
+        "A todo.txt client for humans" on Ubuntu (screenshots and video clip).\n\n
+        DayTasks\n
+        A fast, simple, and efficient Exercise.txt-compatible task list for Ubuntu.\n\n
+        QExerciseTxt\n
+        A fast, cross-platform Exercise.txt GUI written in Python.\n\n
+        jExercisetxt\n
+        An open-source, Java-based client for Windows, Mac OS X and Linux.\n\n
+        oExercise\n
+        Simple but powerful TUI for Exercise.txt.</string>
+</resources>

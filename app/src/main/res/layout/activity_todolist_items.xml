@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/todo_list_item"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/listItem">
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/todo_list_layout"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layoutAnimation="@anim/list_animation">
+                <!-- Item Name -->
+                <TextView
+                    android:id="@+id/todo_list_itemName"
+                    android:layout_width="270dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:text="@string/todo_itemName"
+                    android:textColor="@color/colorText"
+                    android:textSize="17sp"
+                    android:gravity="top|start"
+                    android:typeface="sans" />
+                <!-- Date of created item -->
+                <TextView
+                    android:id="@+id/todo_list_itemDate"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:text="@string/todo_itemDate"
+                    android:textColor="@color/colorText"
+                    android:textSize="12sp"
+                    android:gravity="top|start"
+                    android:typeface="sans" />
+                <!-- View photo if existed -->
+                <Button
+                    android:id="@+id/todo_list_viewPhoto"
+                    android:layout_width="130dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:padding="5dp"
+                    android:textColor="@color/white"
+                    android:contentDescription="@string/todo_viewPhoto"
+                    android:background="@drawable/view_photo" />
+            </LinearLayout>
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layoutAnimation="@anim/list_animation">
+                <!-- Checkbox for deletion -->
+                <CheckBox
+                    android:id="@+id/todo_list_itemChk"
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:button="@drawable/custom_checkbox"
+                    android:checked="false" />
+            </LinearLayout>
+        </LinearLayout>
+</RelativeLayout>

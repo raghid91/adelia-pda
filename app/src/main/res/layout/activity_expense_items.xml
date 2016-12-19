@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/timelog_list_item"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15dp">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/expenseItem">
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="255dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layoutAnimation="@anim/list_animation">
+            <!-- Task Name -->
+            <TextView
+                android:id="@+id/expense_list_reference"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="@string/expense_list_reference"
+                android:textColor="@color/colorText"
+                android:textSize="17sp"
+                android:gravity="top|start"
+                android:typeface="sans" />
+            <TextView
+                android:id="@+id/expense_list_Description"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:textStyle="italic"
+                android:text="@string/expense_list_Description"
+                android:textColor="@color/colorText"
+                android:textSize="14sp"
+                android:gravity="top|start"
+                android:typeface="sans" />
+            <TextView
+                android:id="@+id/expense_list_category"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="@string/expense_list_category"
+                android:textColor="@color/colorText"
+                android:textSize="14sp"
+                android:gravity="top|start"
+                android:typeface="sans" />
+
+            <!-- Date of created record -->
+            <TextView
+                android:id="@+id/expense_list_recordDate"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="@string/todo_itemDate"
+                android:textColor="@color/colorText"
+                android:textSize="12sp"
+                android:gravity="top|start"
+                android:typeface="sans" />
+        </LinearLayout>
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center_vertical"
+            android:orientation="vertical"
+            android:layoutAnimation="@anim/list_animation">
+            <!-- Checkbox for deletion -->
+            <TextView
+                android:id="@+id/expense_list_amount"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold"
+                android:text="@string/expense_list_amount"
+                android:textAlignment="center"
+                android:textColor="@color/colorText"
+                android:textSize="14sp"
+                android:gravity="top|start"
+                android:typeface="sans" />
+            <CheckBox
+                android:id="@+id/expense_list_recordChk"
+                android:layout_width="38dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:button="@drawable/custom_checkbox"
+                android:checked="false" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

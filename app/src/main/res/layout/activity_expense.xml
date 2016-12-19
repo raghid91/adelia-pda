@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/header"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+        <!-- Title -->
+        <TextView
+            android:id="@+id/expense_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/expense_title"
+            android:textColor="@color/colorPrimary"
+            android:textSize="30sp"
+            android:gravity="top|start"
+            android:typeface="sans" />
+        <!-- Horizontal divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorPrimary"/>
+    </LinearLayout>
+    <!-- Set the ListView to receive new expense record -->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/expense_middle"
+        android:orientation="vertical"
+        android:layout_below="@id/header"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:padding="10dp">
+        <ListView
+            android:id="@+id/expense_list"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:paddingBottom="60dp"
+            android:dividerHeight="0.5dp"/>
+    </LinearLayout>
+    <!-- Buttons fragment -->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/expense_afterfooter"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <fragment
+            android:name="com.example.yannick.adelia_pda.buttonsFragment"
+            android:id="@+id/expense_buttonsFragment"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.05"
+            tools:layout="@layout/fragment_button">
+        </fragment>
+        <fragment
+            android:name="com.example.yannick.adelia_pda.reportFragment"
+            android:id="@+id/expense_reportFragment"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.7"
+            tools:layout="@layout/fragment_report">
+        </fragment>
+    </LinearLayout>
+</RelativeLayout>

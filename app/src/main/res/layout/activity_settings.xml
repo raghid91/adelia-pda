@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:fontFamily="Helvetica">
+
+    <TextView
+        android:id="@+id/settings_Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/settings_Title"/>
+
+    <View
+        android:id="@+id/hr_settings"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorPrimary"/>
+
+
+    <!-- Button to clear DB -->
+    <TextView
+        android:id="@+id/intro_settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/settings_clearDatabase"/>
+
+    <Button
+        android:id="@+id/settings_clearDb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:layout_marginTop="5dp"
+        android:text="@string/settings_clearDb"
+        android:contentDescription="@string/settings_clearAll"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:background="@color/colorAccent"
+        style="?android:attr/borderlessButtonStyle"/>
+
+    <!-- Drop-down list-->
+    <TextView
+        android:id="@+id/second_settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="5dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/settings_choose"/>
+
+    <View
+        android:id="@+id/hr2_settings"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimary"/>
+
+    <Spinner
+        android:id="@+id/table_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/table_list"
+        android:prompt="@string/settings_clearTable"/>
+
+    <Button
+        android:id="@+id/settings_clearThisTable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:text="@string/settings_clearThisTable"
+        android:contentDescription="@string/settings_clearThisTable"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:background="@color/done"
+        style="?android:attr/borderlessButtonStyle"/>
+</LinearLayout>
